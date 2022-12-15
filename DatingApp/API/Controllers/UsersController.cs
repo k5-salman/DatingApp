@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]  // www.localhost3000/api/Users
+    [Route("api/[controller]")]  // www.localhost5001/api/Users
 
     public class UsersController : ControllerBase
     {
