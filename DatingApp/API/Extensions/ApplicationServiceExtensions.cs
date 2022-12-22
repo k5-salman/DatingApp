@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using API.Data;
 using API.Interfaces;
 using API.Services;
@@ -14,7 +13,7 @@ namespace API.Extensions
         {
             opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
         });
-            services.AddCors();
+
             services.AddScoped<ITokenService, TokenService>();
 
             return services;
