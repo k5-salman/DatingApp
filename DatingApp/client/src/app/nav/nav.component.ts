@@ -21,7 +21,7 @@ export class NavComponent implements OnInit {
     this.accountService.login(this.model).subscribe({
       next: _ => {
         this.router.navigate(['/members'])
-        this.toastr.success("Login successful!")
+        this.toastr.success("Login successful!");
     }
     });
   }
@@ -29,7 +29,6 @@ export class NavComponent implements OnInit {
   logout() {
     this.accountService.logout();
     this.router.navigate(['/']);
-    this.toastr.success("Logout successful!");
   }
 
 }
