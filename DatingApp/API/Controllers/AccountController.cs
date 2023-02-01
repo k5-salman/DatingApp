@@ -79,4 +79,4 @@ public class AccountController : BaseApiController
         return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
     }
 }
-} 
+}  
